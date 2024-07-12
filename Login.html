@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Login.css">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Login</div>
+    <div class="content">
+      <form onsubmit="return validateUserData()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input id="UserEmail" type="email" class="form-control" oninput="validateUserEmail()" name="Email" placeholder="Enter your Email" >
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input id="UserPassword" type="password" class="form-control" oninput="validateUserPassword()" name="Password" placeholder="Enter your password" >
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Login">
+          <div class="signup">
+            <a href="./SignUp.html">
+            Signup
+          </a>
+        </div>
+    </div>
+      </form>
+    </div>
+  </div>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/Login.js"></script>
+</body>
+
+
+
+
+
+</html>

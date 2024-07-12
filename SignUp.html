@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Signup.css">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Sign Up</div>
+    <div class="content">
+      <form onsubmit="return validateUserData()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input id="name" oninput="validateName()" type="text" name="Name" class="form-control" placeholder="Enter your name" >
+          </div>
+          <div class="input-box">
+            <span class="details">Job Title</span>
+            <input type="text" name="Job Title" class="form-control" placeholder="Enter your Job Title" >
+          </div>
+          <div class="input-box">
+            <span class="details">Phone</span>
+            <input id="phone" type="text" maxlength="11" oninput="validateUserPhone()" name="Phone" class="form-control" placeholder="Enter your Phone"  >
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" name="Address" class="form-control" placeholder="Enter your Address" >
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input id="email" type="email" oninput="validateUserEmail()" name="Email" class="form-control" placeholder="Enter your Email" >
+          </div>
+          <div class="input-box">
+            <span class="details"> Password</span>
+            <input id="password" type="password" oninput="validateUserPassword()" name="Password" class="form-control" placeholder="Enter your password" >
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input type="date" name="DateOfBirth" class="form-control" placeholder="Enter your Date Of Birth" >
+          </div>
+          <div class="input-box">
+            <span class="details">Gender</span>
+            <input type="text" name="Gender" class="form-control" placeholder="Enter your Gender" >
+          </div>
+          <div class="image-upload ">
+            <label>Select Image:</label>
+            <input type="file" id="imageFile" name="imageFile" accept="image/*" >
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/Signup.js"></script>
+</body>
+
+
+
+
+
+</html>
